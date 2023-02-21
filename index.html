@@ -3,7 +3,24 @@
 <!-- compare our code, you'll see its different -->
 <head>
     <meta charset="UTF-8">
-    <title>$ root@hash</title>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>$ root@hash</title>
+        <script>
+          var titleText = document.title;
+          var i = 0;
+          setInterval(function() {
+            i = (i + 1) % (titleText.length + 1);
+            document.title = titleText.substring(0, i) + "_";
+          }, 500);
+        </script>
+      </head>
+      <body>
+        <h1></h1>
+      </body>
+    </html>
+    
     <link rel="stylesheet" href="style.css">
     <link href="./styles/styles.css" rel="stylesheet" type="text/css">
     <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
@@ -27,11 +44,10 @@
     <meta property="twitter:description" content="not skidded.">
     <meta property="twitter:image" content="https://i.imgur.com/nHdxy2U.jpg">
 
+    
 </head>
 <body>
     <img class="back" src="bg.png"></img> 
-
-
 <div class="rainbow">
 <pre class="ascii"><br>
 <br>
